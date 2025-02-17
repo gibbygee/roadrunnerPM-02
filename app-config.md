@@ -1,11 +1,9 @@
 # RoadrunnerPM Application Configuration
-asdf
 
 ## Frontend Configuration
 
 ### Theme Configuration
 1. **Theme Settings**
-   - Location: `theme.json`
    - Purpose: Defines application-wide styling
    - Components:
      - Color schemes
@@ -13,7 +11,6 @@ asdf
      - Component variants
 
 2. **Tailwind Configuration**
-   - Location: `tailwind.config.ts`
    - Purpose: Custom utility classes and theme extension
    - Features:
      - Custom color palette
@@ -22,24 +19,22 @@ asdf
 
 ### Vite Configuration
 1. **Build Settings**
-   - Location: `vite.config.ts`
    - Purpose: Frontend build configuration
    - Features:
-     - Alias definitions (`@` for client/src, `@db` for database)
+     - Alias definitions
      - Runtime error overlay plugin
      - Theme plugin configuration
      - Build output configuration for production
 
 2. **Environment Variables**
-   - Prefix: `VITE_`
+   - Prefix: 
    - Purpose: Frontend-specific configuration
-   - Access: `import.meta.env`
+   - Access: 
 
 ## Backend Configuration
 
 ### Express Server
 1. **Server Settings**
-   - Location: `server/index.ts`
    - Features:
      - Middleware configuration
      - Route registration
@@ -50,19 +45,17 @@ asdf
    - CORS settings
    - Rate limiting
    - Request parsing
-   - Session management (`express-session`)
+   - Session management
 
 ### Database Configuration
 1. **Drizzle Settings**
-   - Location: `drizzle.config.ts`
    - Purpose: Database connection and schema management
    - Features:
      - Migration configuration
-     - Schema organization (`./db/schema.ts`)
+     - Schema organization
      - Query logging
 
 2. **Connection Management**
-   - Location: `db/index.ts`
    - Features:
      - Connection pooling
      - WebSocket support
@@ -73,16 +66,14 @@ asdf
 
 ### TypeScript Configuration
 1. **Compiler Options**
-   - Location: `tsconfig.json`
    - Purpose: TypeScript compilation settings
    - Features:
-     - Path aliases (`@/*`, `@db/*`)
+     - Path aliases
      - ESM module configuration
      - Strict type checking
      - Project structure definition
 
 2. **Type Definitions**
-   - Location: `src/types`
    - Purpose: Global type declarations
    - Features:
      - Component props
@@ -91,7 +82,6 @@ asdf
 
 ### Development Server
 1. **Watch Settings**
-   - Location: `server/vite.ts`
    - Features:
      - Hot module replacement
      - Fast refresh configuration
@@ -99,14 +89,13 @@ asdf
      - Development error overlay
 
 2. **Development Tools**
-   - Browser debugging support (`@replit/vite-plugin-runtime-error-modal`)
+   - Browser debugging support
    - React DevTools integration
    - Network request inspection
    - Automatic workflow restarts
 
 ### Replit Configuration
 1. **Project Settings**
-   - Location: `.replit`
    - Purpose: Replit-specific configuration
    - Features:
      - Environment modules
@@ -115,7 +104,7 @@ asdf
      - Deployment settings
 
 2. **Runtime Configuration**
-   - Environments: `nodejs-20`, `web`, `postgresql-16`
-   - Build command: `npm run build`
-   - Run command: `npm run dev`
+   - Environment configuration: 
+   - Build command: 
+   - Run command: 
    - Port mapping: 5000 -> 80
