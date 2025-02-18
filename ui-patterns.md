@@ -8,7 +8,6 @@ The application uses shadcn/ui components, customized for RoadrunnerPM's specifi
 1. **Navigation**
    - Purpose: Application navigation and structure
    - Components:
-     - Sidebar navigation
      - Navigation menu
      - Context menus
 
@@ -30,47 +29,41 @@ The application uses shadcn/ui components, customized for RoadrunnerPM's specifi
 
 1. **Page Layout**
    AppLayout
-   ├── Sidebar Navigation
-   ├── Main Content Area
+   ├── Main Content Area (flex-grow: 1)
    │   ├── Page Header
    │   └── Content
-   └── Context Panels
+   └── [Optional] Slide-in Panel Area (width: 360px)
 
 2. **Roadmap View Layout**
-   RoadmapView
+   RoadmapView (within Main Content Area)
    ├── Roadmap List (Home Page)
    │   ├── Create Roadmap Button
    │   └── Roadmap Table with Latest Version Links
-   ├── Roadmap Detail View
-   │   ├── Filters Bar
-   │   ├── Version Controls
-   │   ├── Download PowerPoint Button
-   │   ├── Upload Excel Button
-   │   ├── Category Headers
-   │   ├── Item Grid
-   │   └── Details Tray
+   └── Roadmap Detail View
+       ├── Version Controls
+       ├── Download PowerPoint Button
+       ├── Upload Excel Button
+       ├── Category Headers
+       └── Item Grid (onClick → opens RoadmapItemPanel)
+
+   RoadmapItemPanel (within Slide-in Panel Area)
+   ├── Panel Header
+   │   ├── Item Title
+   │   └── Close Button
+   ├── Item Details
+   └── Item Actions
 
 ### Interaction Patterns
 
 1. **Item Management**
    - Click to edit item details
-   - Drag and drop for hierarchy management
    - Context menu for quick actions
 
 2. **Versions**
    - Version selector in header
-   - Version comparison view
-   - Version history timeline
 
 3. **Timeline Visualization**
-   - Quarter-based layout
-   - Collapsible hierarchy levels
-   - Filterable by lens attributes
-
-4. **Lens System Interface**
-   - Lens selector dropdown
-   - Multi-select attribute filters
-   - Tag-based item display
+   - Period-based layout
 
 ### Responsive Design
 
@@ -80,6 +73,5 @@ The application uses shadcn/ui components, customized for RoadrunnerPM's specifi
    - Desktop: > 1024px
 
 2. **Layout Adaptations**
-   - Collapsible sidebar on mobile
    - Scrollable timelines
    - Responsive grid system

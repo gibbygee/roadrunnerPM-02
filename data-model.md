@@ -52,10 +52,7 @@ The database schema reflects the domain's hierarchical structure.
   - Unique identifier
   - Name
   - Description
-  - Start period
-  - End period
-  - Status
-  - Priority
+  - Period
   - Area reference
 
 ## Relationships
@@ -89,7 +86,6 @@ Items are organized temporally through:
 
 2. **Timeline Queries**
    - Efficient retrieval by time period
-   - Support for overlapping periods
    - Period-based filtering and grouping
 
 ## Data Integrity

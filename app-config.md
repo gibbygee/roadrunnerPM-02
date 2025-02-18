@@ -10,14 +10,7 @@
      - Typography
      - Component variants
 
-2. **Tailwind Configuration**
-   - Purpose: Custom utility classes and theme extension
-   - Features:
-     - Custom color palette
-     - Responsive breakpoints
-     - Component-specific utilities
-
-### Vite Configuration
+### Frontend Build Configuration
 1. **Build Settings**
    - Purpose: Frontend build configuration
    - Features:
@@ -48,14 +41,7 @@
    - Session management
 
 ### Database Configuration
-1. **Drizzle Settings**
-   - Purpose: Database connection and schema management
-   - Features:
-     - Migration configuration
-     - Schema organization
-     - Query logging
-
-2. **Connection Management**
+1. **Connection Management**
    - Features:
      - Connection pooling
      - WebSocket support

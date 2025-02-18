@@ -10,6 +10,18 @@
     - pg_stat_statements (query analysis)
   - Backup: pg_dump
 
+### Database Layer
+- **Drizzle ORM**
+  - Purpose: Database connection and schema management
+  - Features:
+    - Migration configuration
+    - Schema organization
+    - Query logging
+  - Benefits:
+    - Type-safe database operations
+    - Zero-runtime overhead
+    - First-class TypeScript support
+
 ### API Layer
 - **tRPC**
   - Type-safe API framework
@@ -24,11 +36,6 @@
   - Server Components
   - API Routes
 
-### ORM & Data Access
-- **Drizzle ORM 0.28+**
-  - Type-safe database toolkit
-  - Migration management
-
 ### Authentication & Authorization
 - **NextAuth.js**
   - OAuth 2.0 providers
@@ -39,14 +46,23 @@
 - **Zod**
   - Runtime type validation
   - Schema definition
+  - Form validation
+  - API payload validation
+  - Database schema validation
 
 ## Frontend Stack
 
 ### Framework & UI
 - **React 18+**
 - **Next.js 14+**
-- **TailwindCSS**
-  - Styling framework
+  - App Router
+  - Server Components
+  - Built-in bundling and optimization
+  - Development server with Fast Refresh
+  - Production build optimization
+- **CSS Modules**
+  - Scoped CSS styling
+  - Built into Next.js
 - **Shadcn/ui**
   - Component library
 
@@ -57,10 +73,34 @@
 ## DevOps & Infrastructure
 
 ### Deployment
+
 - **Vercel**
   - Frontend hosting
+  - Hot module replacement in development
+  - Production build optimization
+  - Development server on port 5000
+  - Environment configurations:
+    - Required variables:
+      - DATABASE_URL
+      - AUTH_SECRET
+      - [Other secrets managed via environment]
+    - Optional variables:
+      - Feature flags
+      - External service integrations
+      - Environment-specific configurations
+
 - **GitHub Actions**
   - CI/CD pipeline
+  - Build validation
+  - Automated testing
+
+### Development Server
+- **Next.js Development Server**
+  - Fast Refresh enabled
+  - Built-in optimization
+  - CORS configuration
+  - Rate limiting implementation
+  - Request validation middleware
 
 ### Monitoring
 - **Sentry**
@@ -71,6 +111,12 @@
   - Unit testing
 - **Testing Library**
   - Component testing
+
+### Database Configuration
+- **PostgreSQL 15+**
+  - Connection pooling configured
+  - SSL/TLS encryption enabled
+  - Secured via environment variables
 
 ## Development Tools
 

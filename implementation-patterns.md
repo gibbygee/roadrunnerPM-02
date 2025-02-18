@@ -5,8 +5,7 @@
 ### Component Organization
 1. **Layout Components**
    - Main application layout
-   -  Purpose: Consistent page structure and navigation
-   - Sidebar
+   - Purpose: Consistent page structure and navigation
 
 2. **Domain Components**
    - Purpose: Specific roadmap management functionality
@@ -22,7 +21,7 @@
    - Key Components:
      - Form components and validation
      - Navigation structure
-     - Collapsible sidebar interface
+     - Collapsible slide-in panel interface
 
 ### State Management
 1. **Server State**
